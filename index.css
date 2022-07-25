@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Play&display=swap');
+body{
+  color: #444444;
+  text-align: center;
+  font-family:'PT Sans Caption';
+  font-weight: 300;
+  font-size:1.31rem;
+  line-height:1.8;
+} 
+main {
+  margin: 1.875rem 0.5rem;
+  padding: 0.938rem;
+  border-radius:5px;
+  background: #eee;
+}
+h1{
+  color: #222222;
+  font-size: 2.4rem;
+  line-height:1; 
+  margin:0px 0px;
+}
+h2{
+  color: #222222;
+  font-size: 2.4rem;
+  line-height:2rem;
+  margin:20px 0px;
+}
+.p{
+  font-size: 1.25rem;
+  padding-top: 0;
+  color:#222222; 
+  font-weight:400;
+  text-decoration-line: underline;
+}
+.box{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color:white;
+}
+#image{
+  /*I assigned the width of image in percentage so that it shrinks according to screen size. But their is a problem when we assign the value in percentage the picture size become large on full screen.We are using max-width for this problem so that the picture does not become more larger than the specified max-width.*/
+  width:80%;
+  max-width:280px;
+  /*Displays an element as a block element. It starts on a new line, and takes up the whole width*/
+  display: block; 
+  margin: auto;/*to center the image*/
+  border-radius:5px;
+}
+/* If screen size is more than 800px wide, set the max-width of the image to 330px */
+@media screen and (min-width:800px){
+  #image{
+    max-width:330px;
+  }
+}
+#img-caption{
+  /*max-width:100%;*/
+/*position: relative;*/
+/* display:inline-block;*/
+  font-size:1.1rem;
+  text-align:center;
+  padding-top:0.9rem;
+}
+b{
+  font-size:2rem;
+  font-weight: 800;
+  }
+a{
+  font-size:inherit;
+  color:gray;
+}
+a:hover {
+  color:black;
+}
+blockquote{
+  color:#555251;
+  font-family:Calbiri;
+  font-size: 1.75rem;
+ font-style: italic;
+/*   max-width: 545px; */
+  margin: 0 auto 3.125rem auto;
+}
+cite{
+  font-size:1.25rem;
+}
+/*CSS copied from stack overflow:https://webmasters.stackexchange.com/questions/77928/how-to-make-youtube-video-responsive*/
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    border: 0;
+    position:absolute;
+}
+#tribute-link{
+ color:gray; 
+}
+#tribute-link:hover{
+  color:black;
+}
+ul{
+  text-align:left;
+}
+footer{
+  font-size:1rem;
+  text-align:right;
+  width:100%;
+}
